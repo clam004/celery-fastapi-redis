@@ -19,3 +19,25 @@
 [2022-09-01 19:20:12,916: INFO/ForkPoolWorker-3] Task create_task[576dd7c0-3ad4-4bd0-852a-8b39e57424a1] succeeded in 10.021475253000062s: True
 [2022-09-01 19:21:20,639: INFO/MainProcess] Received task: create_task[ec3cf250-071f-4c9f-9c5f-370d892c6679]  
 [2022-09-01 19:21:40,658: INFO/ForkPoolWorker-1] Task create_task[ec3cf250-071f-4c9f-9c5f-370d892c6679] succeeded in 20.014782960000048s: True
+[2022-09-01 23:43:06,828: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-09-01 23:43:06,842: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-01 23:43:07,877: INFO/MainProcess] mingle: all alone
+[2022-09-01 23:43:07,900: INFO/MainProcess] celery@bdaa463ebfc1 ready.
+[2022-09-01 23:43:11,954: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-09-01 23:43:14,381: INFO/MainProcess] Received task: create_task[dac0a730-a2e5-44ad-96fa-904e877f4114]  
+[2022-09-01 23:43:24,405: ERROR/ForkPoolWorker-1] Task create_task[dac0a730-a2e5-44ad-96fa-904e877f4114] raised unexpected: TypeError('can only concatenate str (not "int") to str')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 15, in create_task
+    return 'hello'+ task_type
+TypeError: can only concatenate str (not "int") to str
+[2022-09-01 23:44:41,503: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-09-01 23:44:41,515: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-01 23:44:42,541: INFO/MainProcess] mingle: all alone
+[2022-09-01 23:44:42,562: INFO/MainProcess] celery@150d4c080815 ready.
+[2022-09-01 23:44:45,957: INFO/MainProcess] Received task: create_task[7347d881-5e8f-4e1c-a85c-dc5d445c57a0]  
+[2022-09-01 23:44:46,683: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-09-01 23:44:55,979: INFO/ForkPoolWorker-1] Task create_task[7347d881-5e8f-4e1c-a85c-dc5d445c57a0] succeeded in 10.01764710000134s: 'hello1'

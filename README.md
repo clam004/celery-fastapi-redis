@@ -27,3 +27,5 @@ Check the status:
 ```sh
 $ curl http://localhost:8004/tasks/<TASK_ID>
 ```
+
+To Check the fastAPI endpoint docs, open your browser to [http://localhost:8004/docs](http://localhost:8004/docs)

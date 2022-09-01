@@ -1,0 +1,5 @@
+[2022-09-01 18:44:43,741: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-09-01 18:44:43,757: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-01 18:44:44,784: INFO/MainProcess] mingle: all alone
+[2022-09-01 18:44:44,806: INFO/MainProcess] celery@c2d9d982b509 ready.
+[2022-09-01 18:44:48,845: INFO/MainProcess] Events of group {task} enabled by remote.

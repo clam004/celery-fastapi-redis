@@ -46,3 +46,10 @@ def create_task(task_type):
     time.sleep(int(task_type) * 10)
     return True
 ```
+
+which is why if you send `{"type": 2}` you get 
+
+```
+[2022-09-01 19:21:20,639: INFO/MainProcess] Received task: create_task[ec3cf250-071f-4c9f-9c5f-370d892c6679]  
+[2022-09-01 19:21:40,658: INFO/ForkPoolWorker-1] Task create_task[ec3cf250-071f-4c9f-9c5f-370d892c6679] succeeded in 20.014782960000048s: True
+```

@@ -11,7 +11,13 @@ Check out the [post](https://testdriven.io/blog/fastapi-and-celery/).
 Spin up the containers:
 
 ```sh
-$ docker-compose up -d --build
+celery-fastapi-redis $ docker-compose up -d --build
+```
+
+Spin down the containers:
+
+```sh
+celery-fastapi-redis $ docker compose down 
 ```
 
 Open your browser to [http://localhost:8004](http://localhost:8004) to view the app or to [http://localhost:5556](http://localhost:5556) to view the Flower dashboard.
